@@ -1,0 +1,2 @@
+# DeepLr CNNPartiallySharedKernels
+ The proposed approach you have a bigger weight matrix (equal size to the input image/feature map) that is randomly initialized. From this matrix, each time you have to select a receptive field as a weight kernel that will do dot product with the same position receptive field in the input image/feature map to calculate a weighted output value for an output neuron.

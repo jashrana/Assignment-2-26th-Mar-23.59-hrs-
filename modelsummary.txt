@@ -1,0 +1,61 @@
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ proposed_layer_10 (Proposed  (None, 320, 320, 32)     864       
+ Layer)                                                          
+                                                                 
+ re_lu_14 (ReLU)             (None, 320, 320, 32)      0         
+                                                                 
+ max_pooling2d_10 (MaxPoolin  (None, 160, 160, 32)     0         
+ g2D)                                                            
+                                                                 
+ proposed_layer_11 (Proposed  (None, 160, 160, 18)     5184      
+ Layer)                                                          
+                                                                 
+ re_lu_15 (ReLU)             (None, 160, 160, 18)      0         
+                                                                 
+ max_pooling2d_11 (MaxPoolin  (None, 80, 80, 18)       0         
+ g2D)                                                            
+                                                                 
+ proposed_layer_12 (Proposed  (None, 80, 80, 16)       2592      
+ Layer)                                                          
+                                                                 
+ re_lu_16 (ReLU)             (None, 80, 80, 16)        0         
+                                                                 
+ max_pooling2d_12 (MaxPoolin  (None, 40, 40, 16)       0         
+ g2D)                                                            
+                                                                 
+ proposed_layer_13 (Proposed  (None, 40, 40, 12)       1728      
+ Layer)                                                          
+                                                                 
+ re_lu_17 (ReLU)             (None, 40, 40, 12)        0         
+                                                                 
+ max_pooling2d_13 (MaxPoolin  (None, 20, 20, 12)       0         
+ g2D)                                                            
+                                                                 
+ proposed_layer_14 (Proposed  (None, 20, 20, 8)        864       
+ Layer)                                                          
+                                                                 
+ re_lu_18 (ReLU)             (None, 20, 20, 8)         0         
+                                                                 
+ max_pooling2d_14 (MaxPoolin  (None, 10, 10, 8)        0         
+ g2D)                                                            
+                                                                 
+ flatten_2 (Flatten)         (None, 800)               0         
+                                                                 
+ dense_6 (Dense)             (None, 128)               102528    
+                                                                 
+ re_lu_19 (ReLU)             (None, 128)               0         
+                                                                 
+ dense_7 (Dense)             (None, 64)                8256      
+                                                                 
+ re_lu_20 (ReLU)             (None, 64)                0         
+                                                                 
+ dense_8 (Dense)             (None, 1)                 65        
+                                                                 
+=================================================================
+Total params: 122,081
+Trainable params: 122,081
+Non-trainable params: 0
+_________________________________________________________________
